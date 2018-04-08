@@ -60,7 +60,7 @@ namespace ShoppingCartList.Resources.layout
             itemDescriptionTextView.Text = selectedItem.Description;
             itemPriceTextView.Text = "Cena: " + selectedItem.Price + "zł";
 
-            var imageBitmap = ImageHelper.GetImageBitmapFromUrl("file://Images/" + selectedItem.ImagePath + ".jpg");
+            var imageBitmap = ImageHelper.GetImageBitmapFromUrl("https://raw.githubusercontent.com/adamstajszczak/XamarinShopCart/master/ShoppingCartList/Images/" + selectedItem.ImagePath + ".jpg");
 
             itemImageView.SetImageBitmap(imageBitmap);
         }
