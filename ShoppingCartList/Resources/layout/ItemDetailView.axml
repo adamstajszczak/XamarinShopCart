@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="100dp">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/itemImageView"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Nazwa przedmiotu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemNameTextView"
+            android:textColor="#1A237E"
+            android:paddingTop="20dp"
+            android:textSize="26dp" />
+        <TextView
+            android:text="Opis przedmiotu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemDescriptionTextView"
+            android:textColor="#1A237E"
+            android:paddingTop="20dp"
+            android:textSize="20dp" />
+        <TextView
+            android:text="Cena: 1111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemPriceTextView"
+            android:textColor="#1A237E"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Anuluj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelButton"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:background="#EC407A" />
+            <EditText
+                android:inputType="number"
+                android:text="1"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:id="@+id/amountEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#1A237E"
+                android:background="#FCE4EC" />
+            <Button
+                android:text="Dodaj do listy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderButton"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:background="#EC407A" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
