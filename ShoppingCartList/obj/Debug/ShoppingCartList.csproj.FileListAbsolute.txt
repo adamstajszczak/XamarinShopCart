@@ -59,6 +59,10 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\valu
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\R.cs.flag
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\uploadflags.txt
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\itemmenuview.xml
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\itemrowview.xml
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\mainmenu.xml
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\drawable\logo.jpg
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\aboutview.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\bin\Debug\Mono.Android.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\bin\Debug\mscorlib.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\bin\Debug\System.Core.pdb
@@ -80,7 +84,6 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\linksrc\
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\linksrc\Mono.Security.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\linksrc\ShoppingCartList.dll.mdb
-C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.csprojResolveAssemblyReference.cache
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.dll.mdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\ShoppingCartList.dll.mdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\Mono.Android.pdb
@@ -93,5 +96,6 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\System.Runtime.Serialization.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\System.Xml.pdb
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.csprojResolveAssemblyReference.cache
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.dll
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\linksrc\ShoppingCartList.dll.mdb

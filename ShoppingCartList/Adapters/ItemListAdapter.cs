@@ -57,14 +57,12 @@ namespace ShoppingCartList.Adapters
             {
                 convertView =
                     context.LayoutInflater
-                    .Inflate(Android.Resource.Layout.ActivityListItem, null);
+                    .Inflate(Resource.Layout.ItemRowView, null);
             }
-            convertView.FindViewById<TextView>(Android.Resource.Id.Text1).Text =
-                item.Name;
-            convertView.FindViewById<ImageView>(Android.Resource.Id.Icon)
+            convertView.FindViewById<TextView>(Resource.Id.itemNameTextView).Text = item.Name;
+            convertView.FindViewById<TextView>(Resource.Id.itemPriceTextView).Text = item.Price+ " zł";
+            convertView.FindViewById<ImageView>(Resource.Id.itemImageView)
                 .SetImageBitmap(imageBitmap);
-            return convertView;
-
             return convertView;
         }
     }

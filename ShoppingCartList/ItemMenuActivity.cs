@@ -12,10 +12,11 @@ using Android.Widget;
 using ShoppingCartList.Adapters;
 using ShoppingCartList.Core.Model;
 using ShoppingCartList.Core.Service;
+using ShoppingCartList.Resources.layout;
 
 namespace ShoppingCartList
 {
-    [Activity(Label = "ItemMenuActivity", MainLauncher = true)]
+    [Activity(Label = "ItemMenuActivity")]
     public class ItemMenuActivity : Activity
     {
         private ListView itemListView;
@@ -37,6 +38,19 @@ namespace ShoppingCartList
             itemListView.Adapter = new ItemListAdapter(this, allItems);
 
             itemListView.FastScrollEnabled = true;
+
+            itemListView.ItemClick += ItemListView_ItemClick;
+        }
+
+        private void ItemListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var item = allItems[e.Position];
+
+            var intent = new Intent();
+            intent.SetClass(this, typeof(ItemDetailActivity));
+            intent.PutExtra("selectedItemId", item.ItemId);
+
+            StartActivityForResult(intent, 100);
         }
     }
 }
