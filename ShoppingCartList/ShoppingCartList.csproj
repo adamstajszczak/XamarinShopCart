@@ -17,7 +17,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -54,10 +54,12 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\ItemListAdapter.cs" />
     <Compile Include="Core\Model\Item.cs" />
     <Compile Include="Core\Model\ItemGroup.cs" />
     <Compile Include="Core\Repository\ItemRepository.cs" />
     <Compile Include="Core\Service\ItemDataService.cs" />
+    <Compile Include="ItemMenuActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ItemDetailActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -69,6 +71,9 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\ItemDetailView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ItemMenuView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

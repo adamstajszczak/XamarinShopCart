@@ -16,9 +16,10 @@
         <ImageView
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:id="@+id/itemImageView"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
         <TextView
             android:text="Nazwa przedmiotu"
             android:layout_width="match_parent"

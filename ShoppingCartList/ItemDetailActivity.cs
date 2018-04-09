@@ -15,7 +15,7 @@ using ShoppingCartList.Utility;
 
 namespace ShoppingCartList.Resources.layout
 {
-    [Activity(Label = "Szczegóły przedmiotu", MainLauncher = true)]
+    [Activity(Label = "Szczegóły przedmiotu")]
     public class ItemDetailActivity : Activity
     {
         private ImageView itemImageView;

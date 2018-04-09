@@ -37,7 +37,7 @@ namespace ShoppingCartList.Core.Repository
                         ItemId = 2,
                         Name = "Masło",
                         Description = "OPIS MASŁA",
-                        ImagePath = "item2",
+                        ImagePath = "masloImage",
                         Price = 4.99
                     },
                     new Item()
@@ -45,7 +45,7 @@ namespace ShoppingCartList.Core.Repository
                         ItemId = 3,
                         Name = "Kawa",
                         Description = "OPIS KAWA",
-                        ImagePath = "item3",
+                        ImagePath = "kawaImage",
                         Price = 11.99
                     }
                 }
@@ -62,7 +62,7 @@ namespace ShoppingCartList.Core.Repository
                         ItemId = 4,
                         Name = "Żubrówka 0.7L",
                         Description = "Wódka",
-                        ImagePath = "item4",
+                        ImagePath = "zobrowkaImage",
                         Price = 30
                     },
                     new Item()
@@ -70,7 +70,7 @@ namespace ShoppingCartList.Core.Repository
                         ItemId = 5,
                         Name = "Tyskie 0.5L",
                         Description = "Piwo",
-                        ImagePath = "item5",
+                        ImagePath = "tyskieImage",
                         Price = 2.70
                     },
                     new Item()
@@ -78,7 +78,7 @@ namespace ShoppingCartList.Core.Repository
                         ItemId = 6,
                         Name = "Proseco",
                         Description = "Wino",
-                        ImagePath = "item6",
+                        ImagePath = "wineImage",
                         Price = 40
                     }
                 }

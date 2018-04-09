@@ -56,6 +56,9 @@ namespace ShoppingCartList
 			// aapt resource value: 0x7f040001
 			public const int itemImageView = 2130968577;
 			
+			// aapt resource value: 0x7f040008
+			public const int itemListView = 2130968584;
+			
 			// aapt resource value: 0x7f040002
 			public const int itemNameTextView = 2130968578;
 			
@@ -85,7 +88,10 @@ namespace ShoppingCartList
 			public const int ItemDetailView = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Main = 2130837505;
+			public const int ItemMenuView = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Main = 2130837506;
 			
 			static Layout()
 			{
