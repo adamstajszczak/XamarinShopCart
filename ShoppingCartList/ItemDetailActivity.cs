@@ -36,7 +36,9 @@ namespace ShoppingCartList.Resources.layout
             SetContentView(Resource.Layout.ItemDetailView);
 
             dataService = new ItemDataService();
-            selectedItem = dataService.GetItemById(1);
+
+            var selectedItemId = Intent.Extras.GetInt("selectedItemId");
+            selectedItem = dataService.GetItemById(selectedItemId);
 
             FindViews();
             BindData();
@@ -73,7 +75,8 @@ namespace ShoppingCartList.Resources.layout
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            //TODO
+            var intent = new Intent(this, typeof(ItemMenuActivity));
+            StartActivity(intent);
         }
 
         private void OrderButton_Click(object sender, EventArgs e)
