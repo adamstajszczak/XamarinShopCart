@@ -54,7 +54,6 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\Shopping
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\bin\ShoppingCartList.ShoppingCartList.apk
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\itemdetailview.xml
-C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\main.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\values\strings.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\R.cs.flag
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\uploadflags.txt
@@ -97,3 +96,9 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.csprojResolveAssemblyReference.cache
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\dairyproductsfragment.xml
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\alcoholproductsfragment.xml
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\drawable\alcoholproducts.png
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\drawable\dairyproducts.png
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.dll
+C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\linksrc\ShoppingCartList.dll.mdb

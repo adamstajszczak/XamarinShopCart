@@ -81,10 +81,15 @@ namespace ShoppingCartList.Resources.layout
 
         private void OrderButton_Click(object sender, EventArgs e)
         {
-            var dialog = new AlertDialog.Builder(this);
-            dialog.SetTitle("Potwierdzenie");
-            dialog.SetMessage("Pomyślnie dodano "+ amountEditText.Text+ "x " + selectedItem.Name + " do koszyka!");
-            dialog.Show();
+            var amount = Int32.Parse(amountEditText.Text);
+
+            var intent = new Intent();
+            intent.PutExtra("selectedItemId", selectedItem.ItemId);
+            intent.PutExtra("amount", amount);
+
+            SetResult(Result.Ok, intent);
+
+            this.Finish();
         }
     }
 }

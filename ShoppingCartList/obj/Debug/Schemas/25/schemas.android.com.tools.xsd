@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>4/9/2018 21:00:49</xs:documentation>
+    <xs:documentation>4/10/2018 19:34:02</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -13,10 +13,11 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/aboutview" />
+            <xs:enumeration value="@layout/alcoholproductsfragment" />
+            <xs:enumeration value="@layout/dairyproductsfragment" />
             <xs:enumeration value="@layout/itemdetailview" />
             <xs:enumeration value="@layout/itemmenuview" />
             <xs:enumeration value="@layout/itemrowview" />
-            <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/mainmenu" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -56,10 +57,11 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/aboutview" />
+            <xs:enumeration value="@layout/alcoholproductsfragment" />
+            <xs:enumeration value="@layout/dairyproductsfragment" />
             <xs:enumeration value="@layout/itemdetailview" />
             <xs:enumeration value="@layout/itemmenuview" />
             <xs:enumeration value="@layout/itemrowview" />
-            <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/mainmenu" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -99,10 +101,11 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/aboutview" />
+            <xs:enumeration value="@layout/alcoholproductsfragment" />
+            <xs:enumeration value="@layout/dairyproductsfragment" />
             <xs:enumeration value="@layout/itemdetailview" />
             <xs:enumeration value="@layout/itemmenuview" />
             <xs:enumeration value="@layout/itemrowview" />
-            <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/mainmenu" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
@@ -142,10 +145,11 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:enumeration value="@layout/aboutview" />
+            <xs:enumeration value="@layout/alcoholproductsfragment" />
+            <xs:enumeration value="@layout/dairyproductsfragment" />
             <xs:enumeration value="@layout/itemdetailview" />
             <xs:enumeration value="@layout/itemmenuview" />
             <xs:enumeration value="@layout/itemrowview" />
-            <xs:enumeration value="@layout/main" />
             <xs:enumeration value="@layout/mainmenu" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />

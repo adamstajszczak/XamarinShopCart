@@ -60,8 +60,10 @@
     <Compile Include="Core\Model\ItemGroup.cs" />
     <Compile Include="Core\Repository\ItemRepository.cs" />
     <Compile Include="Core\Service\ItemDataService.cs" />
+    <Compile Include="Fragments\AlcoholProductsFragment.cs" />
+    <Compile Include="Fragments\BaseFragment.cs" />
+    <Compile Include="Fragments\DairyProductsFragment.cs" />
     <Compile Include="ItemMenuActivity.cs" />
-    <Compile Include="MainActivity.cs" />
     <Compile Include="ItemDetailActivity.cs" />
     <Compile Include="MenuActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -89,11 +91,14 @@
     <AndroidResource Include="Resources\layout\AboutView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
+    <AndroidResource Include="Resources\layout\DairyProductsFragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\AlcoholProductsFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +111,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\alcoholProducts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\dairyProducts.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
