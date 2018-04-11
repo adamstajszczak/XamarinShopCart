@@ -1,0 +1,60 @@
+﻿[
+  {
+    "ItemGroupId": "1",
+    "Title": "Spozywcze",
+    "ImagePath": "",
+    "Items": [
+      {
+        "ItemId": "1",
+        "Name": "Chleb",
+        "Description": "Manchego smelly cheese danish fontina. Hard cheese cow goat red leicester pecorino macaroni cheese cheesecake gouda. Ricotta fromage cheese and biscuits stinking bishop halloumi monterey jack cheese strings goat. Pecorino babybel pecorino jarlsberg cow say cheese cottage cheese.",
+        "ImagePath": "chlebImage",
+        "Price": 2.99
+      },
+      {
+        "ItemId": "2",
+        "Name": "Kawa",
+        "Description": "Bacon ipsum dolor amet turducken ham t-bone shankle boudin kevin. Hamburger salami pork shoulder pork chop. Flank doner turducken venison rump swine sausage salami sirloin kielbasa pork belly tail cow. Pork chop bacon ground round cupim tongue, venison frankfurter bresaola tri-tip andouille sirloin turducken spare ribs biltong. Drumstick ham hock pork tail, capicola shank frankfurter beef ribs jowl meatball turkey hamburger. Tenderloin swine ham pork belly beef ribeye.",
+        "ImagePath": "kawaImage",
+        "Price": 12,
+        
+      },
+      {
+        "ItemId": "3",
+        "Name": "Maslo",
+        "Description": "Capicola short loin shoulder strip steak ribeye pork loin flank cupim doner pastrami. Doner short loin frankfurter ball tip pork belly, shank jowl brisket. Kielbasa prosciutto chuck, turducken brisket short ribs tail pork shankle ball tip. Pancetta jerky andouille chuck salami pastrami bacon pig tri-tip meatball tail bresaola shank short ribs strip steak. Ham hock frankfurter ball tip, biltong cow pastrami swine tenderloin ground round pork loin t-bone.",
+        "ImagePath": "masloImage",
+        "Price": 8,
+      }
+    ]
+  },
+
+  {
+    "ItemGroupId": "2",
+    "Title": "Alkoholowe",
+    "ImagePath": "",
+    "Items": [
+      {
+        "ItemId": "4",
+        "Name": "Wodka",
+        "Description": "Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.\n\nGumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.",
+        "ImagePath": "Item4",
+        "Price": 25,
+      },
+      {
+        "ItemId": "5",
+        "Name": "Piwo",
+        "Description": "Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.",
+        "ImagePath": "Item5",
+        "Price": 3,
+      },
+      {
+        "ItemId": "6",
+        "Name": "Wino",
+        "Description": "Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula.",
+        "ImagePath": "Item6",
+        "Price": 8,
+      }
+    ]
+  }
+]
