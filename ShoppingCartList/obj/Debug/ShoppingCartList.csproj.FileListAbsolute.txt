@@ -101,7 +101,6 @@ C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\Sho
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.pdb
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.ShoppingCartList.apk
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.ShoppingCartList-Signed.apk
-C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.csprojResolveAssemblyReference.cache
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.csproj.CoreCompileInputs.cache
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.dll
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.pdb
@@ -116,5 +115,14 @@ C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\res
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\res\drawable\logo.jpg
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\R.cs.flag
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\uploadflags.txt
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\itemcartview.xml
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\res\drawable\list.png
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.dll.mdb
 C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\ShoppingCartList.dll.mdb
+C:\Users\Student\Documents\GitHub\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.csprojResolveAssemblyReference.cache

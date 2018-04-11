@@ -85,6 +85,10 @@ namespace ShoppingCartList.Resources.layout
             dialog.SetTitle("Potwierdzenie");
             dialog.SetMessage("Pomyślnie dodano "+ amountEditText.Text+ "x " + selectedItem.Name + " do koszyka!");
             dialog.Show();
+
+            int wartosc = Int32.Parse(amountEditText.Text);
+            selectedItem.itemAmount = wartosc;
+            
         }
     }
 }

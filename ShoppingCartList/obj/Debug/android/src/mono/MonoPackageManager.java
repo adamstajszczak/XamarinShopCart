@@ -107,6 +107,9 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "ShoppingCartList.dll" comes first in this list. */
 		"ShoppingCartList.dll",
+		"Newtonsoft.Json.dll",
+		"System.Net.Http.Extensions.dll",
+		"System.Net.Http.Primitives.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
