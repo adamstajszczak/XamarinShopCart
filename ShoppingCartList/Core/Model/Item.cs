@@ -49,5 +49,11 @@ namespace ShoppingCartList.Core.Model
             get;
             set;
         }
+
+        public int itemAmount
+        {
+            get;
+            set;
+        }
     }
 }

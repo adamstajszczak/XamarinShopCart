@@ -37,5 +37,10 @@ namespace ShoppingCartList.Core.Service
         {
             return itemRepository.GetItemById(itemId);
         }
+
+        public List<Item> GetCartItems()
+        {
+            return itemRepository.GetCartItems();
+        }
     }
 }

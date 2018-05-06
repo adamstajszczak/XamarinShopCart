@@ -10,80 +10,47 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using ShoppingCartList.Core.Model;
+using System.Threading.Tasks;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace ShoppingCartList.Core.Repository
 {
     public class ItemRepository
     {
-        private static List<ItemGroup> itemGroups = new List<ItemGroup>()
+        private static List<ItemGroup> itemGroups = new List<ItemGroup>();
+
+        string url  = "https://api.myjson.com/bins/1fhe27";
+
+        public ItemRepository()
         {
-            new ItemGroup()
+            Task.Run(() => this.LoadDataAsync(url)).Wait();
+        }
+
+        private async Task LoadDataAsync(string uri)
+        {
+            if (itemGroups != null)
             {
-                ItemGroupId = 1,
-                Title = "Spożywcze",
-                ImagePath = "",
-                Items = new List<Item>()
+                string responseJSONString = null;
+
+                using (var httpClient = new HttpClient())
                 {
-                    new Item()
+                    try
                     {
-                        ItemId = 1,
-                        Name = "Chleb",
-                        Description = "OPIS CHLEBA",
-                        ImagePath = "chlebImage",
-                        Price = 2.49
-                    },
-                    new Item()
+                        Task<HttpResponseMessage> getResponse = httpClient.GetAsync(uri);
+
+                        HttpResponseMessage respose = await getResponse;
+
+                        responseJSONString = await respose.Content.ReadAsStringAsync();
+
+                        itemGroups = JsonConvert.DeserializeObject<List<ItemGroup>>(responseJSONString);
+                    } catch (Exception ex)
                     {
-                        ItemId = 2,
-                        Name = "Masło",
-                        Description = "OPIS MASŁA",
-                        ImagePath = "masloImage",
-                        Price = 4.99
-                    },
-                    new Item()
-                    {
-                        ItemId = 3,
-                        Name = "Kawa",
-                        Description = "OPIS KAWA",
-                        ImagePath = "kawaImage",
-                        Price = 11.99
-                    }
-                }
-            },
-            new ItemGroup()
-            {
-                ItemGroupId = 2,
-                Title = "Alkohole",
-                ImagePath = "",
-                Items = new List<Item>()
-                {
-                    new Item()
-                    {
-                        ItemId = 4,
-                        Name = "Żubrówka 0.7L",
-                        Description = "Wódka",
-                        ImagePath = "zobrowkaImage",
-                        Price = 30
-                    },
-                    new Item()
-                    {
-                        ItemId = 5,
-                        Name = "Tyskie 0.5L",
-                        Description = "Piwo",
-                        ImagePath = "tyskieImage",
-                        Price = 2.70
-                    },
-                    new Item()
-                    {
-                        ItemId = 6,
-                        Name = "Proseco",
-                        Description = "Wino",
-                        ImagePath = "wineImage",
-                        Price = 40
+                        throw;
                     }
                 }
             }
-        };
+        }
 
         public List<Item> GetAllItems()
         {
@@ -120,6 +87,17 @@ namespace ShoppingCartList.Core.Repository
                 return group.Items;
             }
             return null;
+        }
+
+        public List<Item> GetCartItems()
+        {
+            IEnumerable<Item> items =
+                from itemGroup in itemGroups
+                from item in itemGroup.Items
+                where item.itemAmount > 0
+
+                select item;
+            return items.ToList<Item>();
         }
     }
 }

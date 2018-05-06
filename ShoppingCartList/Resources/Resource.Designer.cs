@@ -45,13 +45,10 @@ namespace ShoppingCartList
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int alcoholProducts = 2130837504;
+			public const int list = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int dairyProducts = 2130837505;
-			
-			// aapt resource value: 0x7f020002
-			public const int logo = 2130837506;
+			public const int logo = 2130837505;
 			
 			static Drawable()
 			{
@@ -66,8 +63,8 @@ namespace ShoppingCartList
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05000f
-			public const int aboutButton = 2131034127;
+			// aapt resource value: 0x7f05000e
+			public const int aboutButton = 2131034126;
 			
 			// aapt resource value: 0x7f05000b
 			public const int amountEditText = 2131034123;
@@ -78,11 +75,8 @@ namespace ShoppingCartList
 			// aapt resource value: 0x7f05000a
 			public const int cancelButton = 2131034122;
 			
-			// aapt resource value: 0x7f05000e
-			public const int cartButton = 2131034126;
-			
 			// aapt resource value: 0x7f05000d
-			public const int fragmentContainer = 2131034125;
+			public const int cartButton = 2131034125;
 			
 			// aapt resource value: 0x7f050008
 			public const int itemDescriptionTextView = 2131034120;
@@ -131,19 +125,19 @@ namespace ShoppingCartList
 			public const int AboutView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int AlcoholProductsFragment = 2130903041;
+			public const int ItemCartView = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int DairyProductsFragment = 2130903042;
+			public const int ItemDetailView = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int ItemDetailView = 2130903043;
+			public const int ItemMenuView = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int ItemMenuView = 2130903044;
+			public const int ItemRowView = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int ItemRowView = 2130903045;
+			public const int Main = 2130903045;
 			
 			// aapt resource value: 0x7f030006
 			public const int MainMenu = 2130903046;
