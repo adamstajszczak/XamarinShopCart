@@ -96,9 +96,12 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\ShoppingCartList.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\dairyproductsfragment.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\layout\alcoholproductsfragment.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\drawable\alcoholproducts.png
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\res\drawable\dairyproducts.png
+=======
+>>>>>>> parent of 4a4292d... switch activity
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\bin\Debug\ShoppingCartList.dll
 C:\Users\Shaggy\source\repos\XamarinShopCart\ShoppingCartList\obj\Debug\linksrc\ShoppingCartList.dll.mdb

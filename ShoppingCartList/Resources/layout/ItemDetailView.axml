@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:paddingTop="60dp">
+        android:paddingTop="100dp">
         <ImageView
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:layout_centerInParent="true"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="#ffec407a" />
+                android:background="#EC407A" />
             <EditText
                 android:inputType="number"
                 android:text="1"
@@ -69,14 +69,14 @@
                 android:textColor="#1A237E"
                 android:background="#FCE4EC" />
             <Button
-                android:text="Dodaj"
+                android:text="Dodaj do listy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/orderButton"
                 android:layout_centerInParent="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="#ffec407a" />
+                android:background="#EC407A" />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
