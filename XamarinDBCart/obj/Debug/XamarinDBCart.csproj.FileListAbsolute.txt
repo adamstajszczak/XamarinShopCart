@@ -94,7 +94,6 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\layout\
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\layout\aboutview.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\layout\itemmenuview.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\layout\itemdetailview.xml
-C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\layout\main.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\values\strings.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\drawable\list.png
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\R.cs.flag
@@ -134,5 +133,6 @@ C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\linksrc\Sys
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\linksrc\System.Runtime.Serialization.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\linksrc\System.Xml.pdb
+C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\res\layout\cartmenuview.xml
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\bin\Debug\XamarinDBCart.dll
 C:\Users\Shaggy\source\repos\XamarinShopCart\XamarinDBCart\obj\Debug\linksrc\XamarinDBCart.dll.mdb

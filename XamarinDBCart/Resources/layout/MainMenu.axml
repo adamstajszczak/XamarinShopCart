@@ -12,7 +12,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp" />
     <Button
-        android:text="Dodaj przedmioty do listy"
+        android:text="Lista przedmiotów"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/orderButton"
@@ -38,5 +38,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/addItem"
         android:layout_marginTop="100dp"
-        android:backgroundTint="#ffec407a" />
+        android:backgroundTint="#ffec407a"
+        android:textColor="@android:color/background_light" />
 </LinearLayout>

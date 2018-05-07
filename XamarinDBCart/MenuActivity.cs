@@ -43,6 +43,13 @@ namespace XamarinDBCart
             orderButton.Click += OrderButton_Click;
             aboutButton.Click += AboutButton_Click;
             addItem.Click += AddItem_Click;
+            cartButton.Click += CartButton_Click;
+        }
+
+        private void CartButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(CartMenuActivity));
+            StartActivity(intent);
         }
 
         private void AddItem_Click(object sender, EventArgs e)

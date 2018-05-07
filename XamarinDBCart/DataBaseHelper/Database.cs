@@ -83,7 +83,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool deleteTable(Items items)
+        public bool deleteFromTable(Items items)
         {
             try
             {
@@ -132,6 +132,38 @@ namespace XamarinDBCart.DataBaseHelper
             {
 
                 return null;
+            }
+        }
+
+        public void dropTable()
+        {
+            try
+            {
+                using (var conn = new SQLite.SQLiteConnection(System.IO.Path.Combine(folder, "Items.db")))
+                {
+                    conn.DropTable<Items>();
+                }
+            }
+            catch (Exception)
+            {
+                Toast.MakeText(Application.Context, "Nie mozna usunac", ToastLength.Short).Show();
+            }
+        }
+
+        public bool checkItemName(string itemName)
+        {
+            try
+            {
+                using (var conn = new SQLite.SQLiteConnection(System.IO.Path.Combine(folder, "Items.db")))
+                {
+                    conn.Query<Items>("SELECT * From Items Where Name=?", itemName);
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+                return false;
             }
         }
     }

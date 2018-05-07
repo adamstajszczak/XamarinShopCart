@@ -33,6 +33,7 @@ namespace XamarinDBCart
 
             db = new Database();
             db.createDatabase();
+            //db.dropTable();
 
             string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             Log.Info("FolderBazy: ", folder);
@@ -51,20 +52,40 @@ namespace XamarinDBCart
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var intent = new Intent(this, typeof(MenuActivity));
+            StartActivity(intent);
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            Items item = new Items()
+            double number;
+            bool check = db.checkItemName(itemName.Text);            
+            bool result = Double.TryParse(itemPrice.Text, out number);
+            if (result && !check)
             {
-                Name = itemName.Text,
-                Description = itemDesc.Text,
-                ImagePath = itemName.Text.ToLower(),
-                Price = Int32.Parse(itemPrice.Text)
-            };
-            db.insertIntoTable(item);
-            Toast.MakeText(Application.Context, "Pomyślnie dodano " + item.Name, ToastLength.Short).Show();
+                try
+                {
+                    Items item = new Items()
+                    {
+                        Name = itemName.Text,
+                        Description = itemDesc.Text,
+                        ImagePath = itemName.Text.ToLower(),
+                        Price = number
+                    };
+                    db.insertIntoTable(item);
+                    Toast.MakeText(Application.Context, "Pomyślnie dodano " + item.Name, ToastLength.Short).Show();
+                }
+                catch (Exception)
+                {
+                    Toast.MakeText(Application.Context, "Nie udało się dodać przedmiotu!", ToastLength.Short).Show();
+                }
+            } else if (check)
+            {
+                Toast.MakeText(Application.Context, "Błąd! Przedmiot istnieje już w bazie!", ToastLength.Short).Show();
+            } else
+            {
+                Toast.MakeText(Application.Context, "Błędny format ceny!", ToastLength.Short).Show();
+            }
         }
 
         private void FindViews()

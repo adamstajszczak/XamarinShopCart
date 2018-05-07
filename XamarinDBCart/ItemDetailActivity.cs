@@ -28,6 +28,7 @@ namespace XamarinDBCart
         private List<Items> testList;
         private Items selectedItem;
         Database db;
+        DatabaseCart cartDb;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,6 +37,9 @@ namespace XamarinDBCart
 
             db = new Database();
             db.createDatabase();
+
+            cartDb = new DatabaseCart();
+            cartDb.createDatabase();
 
             var selectedItemId = Intent.Extras.GetInt("selectedItemId");
 
@@ -57,15 +61,36 @@ namespace XamarinDBCart
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var intent = new Intent(this, typeof(ItemMenuActivity));
+            StartActivity(intent);
         }
 
         private void OrderButton_Click(object sender, EventArgs e)
         {
-            var dialog = new AlertDialog.Builder(this);
-            dialog.SetTitle("Potwierdzenie");
-            dialog.SetMessage("Pomyślnie dodano " +  selectedItem.Name + " do koszyka!");
-            dialog.Show();
+            bool result = cartDb.checkItemName(selectedItem.Name);
+            if (result)
+            {
+                Toast.MakeText(Application.Context, "Błąd! Przedmiot znajduje się już w koszyku", ToastLength.Short).Show();
+            }
+            else
+            {
+                try
+                {
+                    Items item = new Items()
+                    {
+                        Name = selectedItem.Name,
+                        ImagePath = selectedItem.ImagePath,
+                        Price = selectedItem.Price
+                    };
+                    cartDb.insertIntoTable(item);
+                    Toast.MakeText(Application.Context, "Pomyślnie dodano " + selectedItem.Name + " do koszyka!", ToastLength.Short).Show();
+                }
+                catch (Exception)
+                {
+                    Toast.MakeText(Application.Context, "Nie można dodać przedmiotu do koszyka!", ToastLength.Short).Show();
+                }
+            }
+
         }
 
         private void BindData()

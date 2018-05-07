@@ -84,10 +84,11 @@
     <Compile Include="AboutActivity.cs" />
     <Compile Include="Adapters\ItemListViewAdapter.cs" />
     <Compile Include="AddItemActivity.cs" />
+    <Compile Include="CartMenuActivity.cs" />
+    <Compile Include="DataBaseHelper\DatabaseCart.cs" />
     <Compile Include="DataBaseHelper\Database.cs" />
     <Compile Include="ItemDetailActivity.cs" />
     <Compile Include="ItemMenuActivity.cs" />
-    <Compile Include="MainActivity.cs" />
     <Compile Include="MenuActivity.cs" />
     <Compile Include="Model\Items.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -117,11 +118,11 @@
     <AndroidResource Include="Resources\layout\ItemDetailView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
+    <AndroidResource Include="Resources\layout\CartMenuView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
