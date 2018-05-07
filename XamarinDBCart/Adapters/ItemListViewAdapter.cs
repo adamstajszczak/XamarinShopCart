@@ -51,7 +51,7 @@ namespace XamarinDBCart.Adapters
             var item = items[position];
 
             var imageBitmap = ImageHelper.GetImageBitmapFromUrl(
-                "https://www.alpinsport.pl/images/no-image.png");
+                "https://raw.githubusercontent.com/adamstajszczak/XamarinShopCart/master/XamarinDBCart/Images/" + item.ImagePath + ".png");
 
             if (convertView == null)
             {

@@ -22,9 +22,17 @@ namespace XamarinDBCart.Utility
 
             using (var webClient = new WebClient())
             {
-                var imageBytes = webClient.DownloadData(url);
-                if (imageBytes != null && imageBytes.Length > 0)
-                    imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
+                try
+                {
+                    var imageBytes = webClient.DownloadData(url);
+                    if (imageBytes != null && imageBytes.Length > 0)
+                        imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
+                } catch (Exception)
+                {
+                    var imageBytes = webClient.DownloadData("https://www.alpinsport.pl/images/no-image.png");
+                    if (imageBytes != null && imageBytes.Length > 0)
+                        imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
+                }
             }
             return imageBitmap;
         }

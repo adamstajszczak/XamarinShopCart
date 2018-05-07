@@ -74,7 +74,8 @@ namespace XamarinDBCart
             itemDescriptionTextView.Text = selectedItem.Description;
             itemPriceTextView.Text = "Cena: " + selectedItem.Price + "zł";
 
-            var imageBitmap = ImageHelper.GetImageBitmapFromUrl("https://www.alpinsport.pl/images/no-image.png");
+            var imageBitmap = ImageHelper.GetImageBitmapFromUrl(
+                "https://raw.githubusercontent.com/adamstajszczak/XamarinShopCart/master/XamarinDBCart/Images/" + selectedItem.ImagePath + "_big.png");
 
             itemImageView.SetImageBitmap(imageBitmap);
         }
