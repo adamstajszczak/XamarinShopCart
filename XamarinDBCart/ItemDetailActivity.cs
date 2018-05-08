@@ -36,14 +36,14 @@ namespace XamarinDBCart
             SetContentView(Resource.Layout.ItemDetailView);
 
             db = new Database();
-            db.createDatabase();
+            db.CreateDatabase();
 
             cartDb = new DatabaseCart();
-            cartDb.createDatabase();
+            cartDb.CreateDatabase();
 
             var selectedItemId = Intent.Extras.GetInt("selectedItemId");
 
-            testList = db.selectOneItem(selectedItemId);
+            testList = db.SelectOneItem(selectedItemId);
             selectedItem = testList.FirstOrDefault();
 
             FindViews();
@@ -67,7 +67,7 @@ namespace XamarinDBCart
 
         private void OrderButton_Click(object sender, EventArgs e)
         {
-            bool result = cartDb.checkItemName(selectedItem.Name);
+            bool result = cartDb.CheckItemName(selectedItem.Name);
             if (result)
             {
                 Toast.MakeText(Application.Context, "Błąd! Przedmiot znajduje się już w koszyku", ToastLength.Short).Show();
@@ -82,7 +82,7 @@ namespace XamarinDBCart
                         ImagePath = selectedItem.ImagePath,
                         Price = selectedItem.Price
                     };
-                    cartDb.insertIntoTable(item);
+                    cartDb.InsertIntoTable(item);
                     Toast.MakeText(Application.Context, "Pomyślnie dodano " + selectedItem.Name + " do koszyka!", ToastLength.Short).Show();
                 }
                 catch (Exception)

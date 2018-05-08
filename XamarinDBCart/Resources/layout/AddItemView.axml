@@ -18,20 +18,23 @@
             android:layout_height="wrap_content"
             android:id="@+id/itemName"
             android:backgroundTint="#ffad1457"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:hint="Nazwa przedmiotu" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/itemDesc"
             android:backgroundTint="#ffad1457"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:hint="Opis" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/itemPrice"
             android:layout_marginBottom="25dp"
             android:backgroundTint="#ffad1457"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:hint="Cena" />
         <RelativeLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"

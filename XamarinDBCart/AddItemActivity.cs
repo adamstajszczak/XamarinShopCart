@@ -32,7 +32,7 @@ namespace XamarinDBCart
             SetContentView(Resource.Layout.AddItemView);
 
             db = new Database();
-            db.createDatabase();
+            db.CreateDatabase();
             //db.dropTable();
 
             string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
@@ -58,9 +58,8 @@ namespace XamarinDBCart
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            double number;
-            bool check = db.checkItemName(itemName.Text);            
-            bool result = Double.TryParse(itemPrice.Text, out number);
+            bool check = db.CheckItemName(itemName.Text);            
+            bool result = Double.TryParse(itemPrice.Text, out double number);
             if (result && !check)
             {
                 try
@@ -72,7 +71,7 @@ namespace XamarinDBCart
                         ImagePath = itemName.Text.ToLower(),
                         Price = number
                     };
-                    db.insertIntoTable(item);
+                    db.InsertIntoTable(item);
                     Toast.MakeText(Application.Context, "Pomyślnie dodano " + item.Name, ToastLength.Short).Show();
                 }
                 catch (Exception)

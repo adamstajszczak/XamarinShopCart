@@ -16,7 +16,7 @@ namespace XamarinDBCart.DataBaseHelper
     class Database
     {
         string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-        public bool createDatabase()
+        public bool CreateDatabase()
         {
             try
             {
@@ -26,13 +26,13 @@ namespace XamarinDBCart.DataBaseHelper
                     return true;
                 }
             }
-            catch (SQLite.SQLiteException ex)
+            catch (SQLite.SQLiteException)
             {
                 return false;
             }
         }
 
-        public bool insertIntoTable(Items items)
+        public bool InsertIntoTable(Items items)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public List<Items> selectTable()
+        public List<Items> SelectTable()
         {
             try
             {
@@ -66,7 +66,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool updateTable(Items items)
+        public bool UpdateTable(Items items)
         {
             try
             {
@@ -83,7 +83,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool deleteFromTable(Items items)
+        public bool DeleteFromTable(Items items)
         {
             try
             {
@@ -100,7 +100,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool selectQueryTable(int ItemId)
+        public bool SelectQueryTable(int ItemId)
         {
             try
             {
@@ -118,7 +118,7 @@ namespace XamarinDBCart.DataBaseHelper
         }
 
 
-        public List<Items> selectOneItem(int ItemId)
+        public List<Items> SelectOneItem(int ItemId)
         {
             try
             {
@@ -135,7 +135,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public void dropTable()
+        public void DropTable()
         {
             try
             {
@@ -150,7 +150,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool checkItemName(string itemName)
+        public bool CheckItemName(string itemName)
         {
             try
             {
@@ -172,7 +172,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public List<Items> selectSearch(string search)
+        public List<Items> SelectSearch(string search)
         {
             try
             {

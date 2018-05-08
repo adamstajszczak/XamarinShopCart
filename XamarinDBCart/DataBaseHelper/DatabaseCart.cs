@@ -16,7 +16,7 @@ namespace XamarinDBCart.DataBaseHelper
     class DatabaseCart
     {
         string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-        public bool createDatabase()
+        public bool CreateDatabase()
         {
             try
             {
@@ -26,13 +26,13 @@ namespace XamarinDBCart.DataBaseHelper
                     return true;
                 }
             }
-            catch (SQLite.SQLiteException ex)
+            catch (SQLite.SQLiteException)
             {
                 return false;
             }
         }
 
-        public bool insertIntoTable(Items items)
+        public bool InsertIntoTable(Items items)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public List<Items> selectTable()
+        public List<Items> SelectTable()
         {
             try
             {
@@ -66,7 +66,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool updateTable(Items items)
+        public bool UpdateTable(Items items)
         {
             try
             {
@@ -83,7 +83,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool deleteTable(Items items)
+        public bool DeleteTable(Items items)
         {
             try
             {
@@ -100,7 +100,7 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool selectQueryTable(int ItemId)
+        public bool SelectQueryTable(int ItemId)
         {
             try
             {
@@ -117,13 +117,18 @@ namespace XamarinDBCart.DataBaseHelper
             }
         }
 
-        public bool checkItemName(string itemName)
+        public bool CheckItemName(string itemName)
         {
             try
             {
                 using (var conn = new SQLite.SQLiteConnection(System.IO.Path.Combine(folder, "Cart.db")))
                 {
-                    conn.Query<Items>("SELECT * From Items Where Name=?", itemName);
+                    List<Items> item = conn.Query<Items>("SELECT * From Items Where Name=?", itemName).ToList();
+                    if (item.Count == 0)
+                    {
+                        return false;
+                    }
+
                     return true;
                 }
             }

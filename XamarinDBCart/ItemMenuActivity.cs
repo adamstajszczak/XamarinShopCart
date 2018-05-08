@@ -34,7 +34,7 @@ namespace XamarinDBCart
             allItems = new List<Items>();
 
             db = new Database();
-            db.createDatabase();
+            db.CreateDatabase();
 
             string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             Log.Info("FolderBazy: ", folder);
@@ -54,7 +54,7 @@ namespace XamarinDBCart
             if (searchProduct.Text == "") WczytajDane();
             else
             {
-                allItems = db.selectSearch(searchProduct.Text);
+                allItems = db.SelectSearch(searchProduct.Text);
                 var adapter = new ItemListViewAdapter(this, allItems);
                 itemListView.Adapter = adapter;
             }
@@ -62,7 +62,7 @@ namespace XamarinDBCart
 
         private void WczytajDane()
         {
-            allItems = db.selectTable(); //potencjalny blad
+            allItems = db.SelectTable(); //potencjalny blad
             var adapter = new ItemListViewAdapter(this, allItems);
             itemListView.Adapter = adapter;
         }
