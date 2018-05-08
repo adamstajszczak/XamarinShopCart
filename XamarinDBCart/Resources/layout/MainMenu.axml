@@ -16,21 +16,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/orderButton"
-        android:backgroundTint="#ffec407a"
+        android:backgroundTint="#ffad1457"
         android:textColor="@android:color/background_light" />
     <Button
         android:text="Pokaż listę zakupów"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cartButton"
-        android:backgroundTint="#ffec407a"
+        android:backgroundTint="#ffad1457"
         android:textColor="@android:color/background_light" />
     <Button
         android:text="O aplikacji"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/aboutButton"
-        android:backgroundTint="#ffec407a"
+        android:backgroundTint="#ffad1457"
         android:textColor="@android:color/background_light" />
     <Button
         android:text="Dodaj przedmiot!"
@@ -38,6 +38,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/addItem"
         android:layout_marginTop="100dp"
-        android:backgroundTint="#ffec407a"
+        android:backgroundTint="#ffad1457"
         android:textColor="@android:color/background_light" />
 </LinearLayout>

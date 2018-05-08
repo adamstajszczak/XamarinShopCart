@@ -17,18 +17,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/itemName"
-            android:backgroundTint="#ffec407a" />
+            android:backgroundTint="#ffad1457"
+            android:textColor="@android:color/background_light" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/itemDesc"
-            android:backgroundTint="#ffec407a" />
+            android:backgroundTint="#ffad1457"
+            android:textColor="@android:color/background_light" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/itemPrice"
             android:layout_marginBottom="25dp"
-            android:backgroundTint="#ffec407a" />
+            android:backgroundTint="#ffad1457"
+            android:textColor="@android:color/background_light" />
         <RelativeLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
@@ -41,7 +44,7 @@
                 android:layout_centerInParent="true"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="20dp"
-                android:background="#EC407A"
+                android:background="#AD1457"
                 android:minHeight="50dp"
                 android:minWidth="120dp"
                 android:textColor="@android:color/background_light" />
@@ -53,7 +56,7 @@
                 android:layout_centerInParent="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
-                android:background="#EC407A"
+                android:background="#AD1457"
                 android:minWidth="120dp"
                 android:minHeight="50dp"
                 android:textColor="@android:color/background_light" />

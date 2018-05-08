@@ -3,7 +3,7 @@
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="#EC407A"
+    android:background="#AD1457"
     android:padding="8dp">
     <ImageView
         android:id="@+id/itemImageView"

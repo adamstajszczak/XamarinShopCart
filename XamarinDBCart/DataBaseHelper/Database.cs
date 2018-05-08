@@ -156,7 +156,12 @@ namespace XamarinDBCart.DataBaseHelper
             {
                 using (var conn = new SQLite.SQLiteConnection(System.IO.Path.Combine(folder, "Items.db")))
                 {
-                    conn.Query<Items>("SELECT * From Items Where Name=?", itemName);
+                    List<Items> item = conn.Query<Items>("SELECT * From Items Where Name=?", itemName).ToList();
+                    if (item.Count == 0)
+                    {
+                        return false;
+                    }
+                    
                     return true;
                 }
             }
