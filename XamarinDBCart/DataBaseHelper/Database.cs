@@ -166,5 +166,22 @@ namespace XamarinDBCart.DataBaseHelper
                 return false;
             }
         }
+
+        public List<Items> selectSearch(string search)
+        {
+            try
+            {
+                using (var conn = new SQLite.SQLiteConnection(System.IO.Path.Combine(folder, "Items.db")))
+                {
+
+                    return conn.Query<Items>("SELECT * From Items Where Name like'"+ search+ "%'").ToList();
+                }
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
     }
 }

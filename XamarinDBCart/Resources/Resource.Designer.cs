@@ -60,14 +60,14 @@ namespace XamarinDBCart
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050012
-			public const int aboutButton = 2131034130;
+			// aapt resource value: 0x7f050013
+			public const int aboutButton = 2131034131;
 			
 			// aapt resource value: 0x7f050009
 			public const int addButton = 2131034121;
 			
-			// aapt resource value: 0x7f050013
-			public const int addItem = 2131034131;
+			// aapt resource value: 0x7f050014
+			public const int addItem = 2131034132;
 			
 			// aapt resource value: 0x7f050001
 			public const int calltextView = 2131034113;
@@ -75,8 +75,8 @@ namespace XamarinDBCart
 			// aapt resource value: 0x7f050008
 			public const int cancelButton = 2131034120;
 			
-			// aapt resource value: 0x7f050011
-			public const int cartButton = 2131034129;
+			// aapt resource value: 0x7f050012
+			public const int cartButton = 2131034130;
 			
 			// aapt resource value: 0x7f05000a
 			public const int cartListView = 2131034122;
@@ -90,8 +90,8 @@ namespace XamarinDBCart
 			// aapt resource value: 0x7f05000b
 			public const int itemImageView = 2131034123;
 			
-			// aapt resource value: 0x7f050010
-			public const int itemListView = 2131034128;
+			// aapt resource value: 0x7f050011
+			public const int itemListView = 2131034129;
 			
 			// aapt resource value: 0x7f050005
 			public const int itemName = 2131034117;
@@ -119,6 +119,9 @@ namespace XamarinDBCart
 			
 			// aapt resource value: 0x7f050002
 			public const int phoneNumberTextView = 2131034114;
+			
+			// aapt resource value: 0x7f050010
+			public const int searchProduct = 2131034128;
 			
 			static Id()
 			{

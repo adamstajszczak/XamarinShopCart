@@ -4,6 +4,6 @@
     <SelectedDevice>android7device</SelectedDevice>
     <DefaultDevice>android7device</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
-    <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.Black.NoTitleBar</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

@@ -7,6 +7,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Text;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
@@ -20,6 +21,7 @@ namespace XamarinDBCart
     public class ItemMenuActivity : Activity
     {
         private ListView itemListView;
+        private EditText searchProduct;
         private List<Items> allItems;
         Database db;
 
@@ -43,7 +45,19 @@ namespace XamarinDBCart
 
             WczytajDane();
 
-            // Create your application here
+            searchProduct = FindViewById<EditText>(Resource.Id.searchProduct);
+            searchProduct.AfterTextChanged += SearchProduct_AfterTextChanged;
+        }
+
+        private void SearchProduct_AfterTextChanged(object sender, AfterTextChangedEventArgs e)
+        {
+            if (searchProduct.Text == "") WczytajDane();
+            else
+            {
+                allItems = db.selectSearch(searchProduct.Text);
+                var adapter = new ItemListViewAdapter(this, allItems);
+                itemListView.Adapter = adapter;
+            }
         }
 
         private void WczytajDane()
