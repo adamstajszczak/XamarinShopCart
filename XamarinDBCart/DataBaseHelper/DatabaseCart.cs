@@ -138,5 +138,21 @@ namespace XamarinDBCart.DataBaseHelper
                 return false;
             }
         }
+
+
+        public void DropTable()
+        {
+            try
+            {
+                using (var conn = new SQLite.SQLiteConnection(System.IO.Path.Combine(folder, "Cart.db")))
+                {
+                    conn.DropTable<Items>();
+                }
+            }
+            catch (Exception)
+            {
+                Toast.MakeText(Application.Context, "Nie mozna usunac", ToastLength.Short).Show();
+            }
+        }
     }
 }

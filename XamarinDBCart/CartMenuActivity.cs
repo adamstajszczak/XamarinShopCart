@@ -21,6 +21,7 @@ namespace XamarinDBCart
     {
         private ListView cartListView;
         private List<Items> allItems;
+        private Button clearCart;
         DatabaseCart db;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -37,10 +38,41 @@ namespace XamarinDBCart
             string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             Log.Info("FolderBazy: ", folder);
 
-            cartListView = FindViewById<ListView>(Resource.Id.cartListView);
+            
             cartListView.FastScrollEnabled = true;
+            clearCart.Click += ClearCart_Click;
 
+            FindViews();
             WczytajDane();
+
+            cartListView.ItemClick += CartListView_ItemClick;
+        }
+
+        private void CartListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var item = allItems[e.Position];
+
+            item.ImagePath = "done";            
+        }
+
+        private void ClearCart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                db.DropTable();
+                var intent = new Intent();
+                intent.SetClass(this, typeof(MenuActivity));
+                intent.PutExtra("message", "Wyczyszczono pomyślnie koszyk!");
+            } catch (Exception)
+            {
+                Toast.MakeText(Application.Context, "Błąd! Nie udało się wyczyścić koszyka", ToastLength.Short).Show();
+            }
+        }
+
+        private void FindViews()
+        {
+            cartListView = FindViewById<ListView>(Resource.Id.cartListView);
+            clearCart = FindViewById<Button>(Resource.Id.clearCart);
         }
 
         private void WczytajDane()

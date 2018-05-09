@@ -6,6 +6,13 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="#CFD8DC">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clearCart"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#ffad1457"
+        android:text="Wyczyść koszyk!" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

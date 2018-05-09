@@ -22,7 +22,6 @@ namespace XamarinDBCart
         EditText itemDesc;
         EditText itemPrice;
         Button addButton;
-        Button cancelButton;
         Database db;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -47,7 +46,6 @@ namespace XamarinDBCart
         private void HandleEvents()
         {
             addButton.Click += AddButton_Click;
-            cancelButton.Click += CancelButton_Click;
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -93,7 +91,6 @@ namespace XamarinDBCart
             itemDesc = FindViewById<EditText>(Resource.Id.itemDesc);
             itemPrice = FindViewById<EditText>(Resource.Id.itemPrice);
             addButton = FindViewById<Button>(Resource.Id.addButton);
-            cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
         }
     }
 }

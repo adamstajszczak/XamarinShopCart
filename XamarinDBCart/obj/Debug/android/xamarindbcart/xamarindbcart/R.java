@@ -15,12 +15,12 @@ public final class R {
     }
     public static final class id {
         public static final int aboutButton=0x7f050013;
-        public static final int addButton=0x7f050009;
+        public static final int addButton=0x7f050008;
         public static final int addItem=0x7f050014;
         public static final int calltextView=0x7f050001;
-        public static final int cancelButton=0x7f050008;
         public static final int cartButton=0x7f050012;
         public static final int cartListView=0x7f05000a;
+        public static final int clearCart=0x7f050009;
         public static final int itemDesc=0x7f050006;
         public static final int itemDescriptionTextView=0x7f05000d;
         public static final int itemImageView=0x7f05000b;

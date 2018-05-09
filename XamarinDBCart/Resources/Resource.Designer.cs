@@ -63,8 +63,8 @@ namespace XamarinDBCart
 			// aapt resource value: 0x7f050013
 			public const int aboutButton = 2131034131;
 			
-			// aapt resource value: 0x7f050009
-			public const int addButton = 2131034121;
+			// aapt resource value: 0x7f050008
+			public const int addButton = 2131034120;
 			
 			// aapt resource value: 0x7f050014
 			public const int addItem = 2131034132;
@@ -72,14 +72,14 @@ namespace XamarinDBCart
 			// aapt resource value: 0x7f050001
 			public const int calltextView = 2131034113;
 			
-			// aapt resource value: 0x7f050008
-			public const int cancelButton = 2131034120;
-			
 			// aapt resource value: 0x7f050012
 			public const int cartButton = 2131034130;
 			
 			// aapt resource value: 0x7f05000a
 			public const int cartListView = 2131034122;
+			
+			// aapt resource value: 0x7f050009
+			public const int clearCart = 2131034121;
 			
 			// aapt resource value: 0x7f050006
 			public const int itemDesc = 2131034118;

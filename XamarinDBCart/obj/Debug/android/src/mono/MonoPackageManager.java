@@ -108,13 +108,10 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "XamarinDBCart.dll" comes first in this list. */
 		"XamarinDBCart.dll",
 		"SQLite-net.dll",
-		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",
-		"SQLitePCLRaw.lib.e_sqlite3.dll",
 		"SQLitePCLRaw.provider.e_sqlite3.dll",
 		"System.Net.Http.Extensions.dll",
-		"System.Net.Http.Primitives.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -22,7 +22,6 @@ namespace XamarinDBCart
         private TextView itemNameTextView;
         private TextView itemDescriptionTextView;
         private TextView itemPriceTextView;
-        private Button cancelButton;
         private Button orderButton;
 
         private List<Items> testList;
@@ -56,7 +55,6 @@ namespace XamarinDBCart
         private void HandleEvents()
         {
             orderButton.Click += OrderButton_Click;
-            cancelButton.Click += CancelButton_Click;
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -111,7 +109,6 @@ namespace XamarinDBCart
             itemNameTextView = FindViewById<TextView>(Resource.Id.itemNameTextView);
             itemDescriptionTextView = FindViewById<TextView>(Resource.Id.itemDescriptionTextView);
             itemPriceTextView = FindViewById<TextView>(Resource.Id.itemPriceTextView);
-            cancelButton = FindViewById<Button>(Resource.Id.cancelButton);
             orderButton = FindViewById<Button>(Resource.Id.orderButton);
         }
     }
