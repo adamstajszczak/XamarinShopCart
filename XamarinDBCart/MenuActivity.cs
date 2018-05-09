@@ -29,19 +29,31 @@ namespace XamarinDBCart
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.MainMenu);
-
-            //db = new database();
-            //db.createdatabase();
+            dbCart = new DatabaseCart();
+            dbCart.CreateDatabase();
+            db = new Database();
+            db.CreateDatabase();
             //loaditems li = new loaditems();
             //li.wczytajdane();
             FindViews();
             HandleEvents();
+            var message = "";
 
-            var message = Intent.Extras.GetString("message");
-
-            if (message.Length > 0)
+            try
             {
-                Toast.MakeText(Application.Context, message, ToastLength.Short).Show();
+                 message = Intent.Extras.GetString("message");
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+
+                if (message.Length > 0)
+                {
+                    Toast.MakeText(Application.Context, message, ToastLength.Short).Show();
+                }
             }
         }
 
@@ -63,9 +75,8 @@ namespace XamarinDBCart
 
         private void CartButton_Click(object sender, EventArgs e)
         {
-            dbCart = new DatabaseCart();
-            dbCart.CreateDatabase();
-            if (db.SelectTable().Count == 0)
+
+            if (dbCart.SelectTable().Count == 0)
             {
                 Toast.MakeText(Application.Context, "Lista przedmiotów jest pusta!", ToastLength.Short).Show();
             }

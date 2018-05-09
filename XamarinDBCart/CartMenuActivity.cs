@@ -36,14 +36,13 @@ namespace XamarinDBCart
             db.CreateDatabase();
 
             string folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            Log.Info("FolderBazy: ", folder);
+            Log.Info("FolderBazy: ", folder);           
 
-            
-            cartListView.FastScrollEnabled = true;
-            clearCart.Click += ClearCart_Click;
 
             FindViews();
             WczytajDane();
+            cartListView.FastScrollEnabled = true;
+            clearCart.Click += ClearCart_Click;
 
             cartListView.ItemClick += CartListView_ItemClick;
         }
@@ -60,9 +59,9 @@ namespace XamarinDBCart
             try
             {
                 db.DropTable();
-                var intent = new Intent();
-                intent.SetClass(this, typeof(MenuActivity));
+                var intent = new Intent(this, typeof(MenuActivity));
                 intent.PutExtra("message", "Wyczyszczono pomyślnie koszyk!");
+                StartActivity(intent);
             } catch (Exception)
             {
                 Toast.MakeText(Application.Context, "Błąd! Nie udało się wyczyścić koszyka", ToastLength.Short).Show();
